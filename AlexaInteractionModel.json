@@ -1,0 +1,311 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "Invocation Name", 
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": [
+                        "que te puedo decir",
+                        "que te digo",
+                        "dime que hacer",
+                        "explicame",
+                        "dime explicacion",
+                        "dime que puedes hacer",
+                        "dime que haces",
+                        "que puedes hacer por mi",
+                        "no se que hacer",
+                        "ayuda"
+                    ]
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": [
+                        "dejame",
+                        "paso de ti",
+                        "cierra skill",
+                        "nos vemos",
+                        "no",
+                        "adios"
+                    ]
+                },
+                {
+                    "name": "EnciendeLuzIntent",
+                    "slots": [
+                        {
+                            "name": "sitioEN",
+                            "type": "objeto"
+                        }
+                    ],
+                    "samples": [
+                        "enciende luz del {sitioEN}",
+                        "enciende luz de la {sitioEN}",
+                        "enciende la luz de la {sitioEN}",
+                        "enciende la luz del {sitioEN}",
+                        "enciende luz de {sitioEN}",
+                        "enciende {sitioEN}",
+                        "enciende la luz de {sitioEN}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "ApagadoGeneralIntent",
+                    "slots": [],
+                    "samples": [
+                        "apagado general",
+                        "todo apagado",
+                        "apagalo todo",
+                        "no quiero mas luces",
+                        "apaga las luces por favor",
+                        "apaga luces",
+                        "luces apagadas",
+                        "luces fuera",
+                        "todas las luces apagadas",
+                        "apaga todas las luces",
+                        "apaga todo"
+                    ]
+                },
+                {
+                    "name": "EncendidoGeneralIntent",
+                    "slots": [],
+                    "samples": [
+                        "encendido general",
+                        "enciendelo todo",
+                        "enciende las luces",
+                        "enciende luces",
+                        "enciende todas las luces",
+                        "enciende todo"
+                    ]
+                },
+                {
+                    "name": "ApagaLuzIntent",
+                    "slots": [
+                        {
+                            "name": "sitioAP",
+                            "type": "objeto"
+                        }
+                    ],
+                    "samples": [
+                        "apaga luz del {sitioAP}",
+                        "apaga luz de la {sitioAP}",
+                        "apaga la luz de la {sitioAP}",
+                        "apaga la luz del {sitioAP}",
+                        "apaga luz de {sitioAP}",
+                        "apaga {sitioAP}",
+                        "apaga la luz de {sitioAP}"
+                    ]
+                },
+                {
+                    "name": "InformacionSensorIntent",
+                    "slots": [
+                        {
+                            "name": "dato",
+                            "type": "sensor"
+                        }
+                    ],
+                    "samples": [
+                        "dime el porcentaje de {dato}",
+                        "que porcentaje de {dato} hay",
+                        "que porcentaje de {dato} tenemos",
+                        "{dato}",
+                        "a que {dato} estamos",
+                        "dime el {dato} de la sala",
+                        "dime la {dato} de la sala",
+                        "dime el {dato}",
+                        "dime la {dato}"
+                    ]
+                },
+                {
+                    "name": "ActualizaSensoresIntent",
+                    "slots": [],
+                    "samples": [
+                        "actualiza datos casa",
+                        "actualiza datos de casa",
+                        "actualiza",
+                        "actualiza cosas",
+                        "actualiza datos",
+                        "actualiza la humedad",
+                        "actualiza la temperatura",
+                        "actualiza datos de sensores"
+                    ]
+                },
+                {
+                    "name": "ControlPersianaIntent",
+                    "slots": [
+                        {
+                            "name": "comando",
+                            "type": "modoLuz"
+                        }
+                    ],
+                    "samples": [
+                        "control de luces {comando}",
+                        "control de luces modo {comando}",
+                        "modalidad {comando}",
+                        "{comando} control de iluminacion",
+                        "modo {comando}",
+                        "persianas modo {comando}",
+                        "luz modo {comando}",
+                        "{comando} control de ventanas",
+                        "{comando} luz controlada",
+                        "{comando} control de luz",
+                        "{comando} control de persianas"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "objeto",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "patio"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "habitación"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "salón"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "baño"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cocina"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "sensor",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "humedad"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "temperatura"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "modoLuz",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "3"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "2"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "1"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cero"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "activa"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "desactiva"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "activar"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "desactivar"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tres"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dos"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "uno"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tarde"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "trabajo"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "mañana"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "noche"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "descanso"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bajo"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "alto"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "medio"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
