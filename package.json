@@ -1,0 +1,9 @@
+{
+  "name": "TFG-EZM-DOMOTICA",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "alexa-sdk": "^1.0.10",
+    "aws-sdk":   "^2"
+  }
+}
